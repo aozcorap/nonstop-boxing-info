@@ -4,60 +4,95 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>So funktioniert es – Nonstop Boxing</title>
-  <meta name="description" content="Die Schritte in Nonstop Boxing: Kampftermin, Fitness-Test, Plan, Timer.">
+  <meta name="description" content="Die Schritte in Nonstop Boxing: Konto, Kampftermin, Fitness-Test, Plan und Timer.">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="stil.css">
 </head>
 <body>
   <header class="top">
-    <a class="brand" href="index.html"><img src="icon.svg" alt="" width="30" height="30"> Nonstop <b>Boxing</b></a>
-    <nav>
-      <a href="so-funktioniert-es.html" aria-current="page">So funktioniert es</a>
-      <a href="fuer-vereine.html">Für Vereine</a>
-      <a href="preise.html">Preise</a>
-      <a href="fragen.html">Fragen</a>
-    </nav>
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="icon.svg" alt="" width="30" height="30"> Nonstop <b>Boxing</b></a>
+      <nav aria-label="Hauptmenü">
+        <a href="so-funktioniert-es.html" aria-current="page">So funktioniert es</a>
+        <a href="fuer-vereine.html">Für Vereine</a>
+        <a href="preise.html">Preise</a>
+        <a href="fragen.html">Fragen</a>
+        <a class="btn" href="https://aozcorap.github.io/airbike/">Web-Version öffnen</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="wrap">
-    <h1>So funktioniert es</h1>
-    <p class="lead">Vier Schritte. Du brauchst ein Air-Bike und deinen Kampftermin, sonst nichts.</p>
-
-    <ol class="steps">
-      <li><b>1. Konto anlegen</b><span class="muted">Mit deiner E-Mail-Adresse. Du bekommst einen Code, kein Passwort nötig.</span></li>
-      <li><b>2. Kampftermin oder Startdatum eintragen</b><span class="muted">Ohne Termin zeigt die App dir, was als Nächstes zu tun ist. Den Plan siehst du erst mit Termin oder Startdatum und dem Ergebnis des Tests.</span></li>
-      <li><b>3. Fitness-Test fahren</b><span class="muted">Du fährst einen kurzen Test auf dem Air-Bike. Daraus errechnet die App deine Zielwerte. Keine festen Pauschalwerte.</span></li>
-      <li><b>4. Einheit mit dem Timer</b><span class="muted">Der Timer sagt dir, wann Belastung und wann Pause ist. Danach siehst du deinen Verlauf im Bereich Fortschritt.</span></li>
-    </ol>
+  <main>
+    <div class="wrap" style="padding-top:56px">
+      <p class="eyebrow">So funktioniert es</p>
+      <h1>Vier Schritte bis zur ersten Einheit</h1>
+      <p class="lead muted" style="font-size:19px;max-width:640px">Du brauchst ein Air-Bike und deinen Kampftermin. Den Rest erledigt die App.</p>
+    </div>
 
     <section>
-      <h2>Wie der Plan aufgebaut ist</h2>
-      <p>Der Plan zählt zehn Wochen rückwärts vom Kampftermin. Er wechselt zwischen drei Arten von Einheiten:</p>
-      <ul class="plain">
-        <li><b>Lange Intervalle</b> für Herz und Kreislauf.</li>
-        <li><b>Mittlere Einheiten</b>, um mit hoher Belastung umzugehen.</li>
-        <li><b>Kurze Sprints</b> für schnelle Anpassung.</li>
-      </ul>
-      <p>Zum Kampf hin werden die Einheiten kampfnäher. Die Pausen sind Teil des Plans. Wer sich dort erholt, hält die harten Abschnitte länger durch.</p>
+      <div class="wrap">
+        <ol class="steps">
+          <li><b>Konto anlegen</b><span>Mit deiner E-Mail-Adresse. Du bekommst einen Code per Mail, ein Passwort brauchst du nicht.</span></li>
+          <li><b>Kampftermin eintragen</b><span>Ohne Termin oder Startdatum zeigt die App dir, was als Nächstes zu tun ist. Den Plan siehst du erst, wenn Termin und Test da sind.</span></li>
+          <li><b>Fitness-Test fahren</b><span>Ein kurzer Test auf dem Air-Bike. Daraus berechnet die App deine Zielwerte.</span></li>
+          <li><b>Einheit mit dem Timer</b><span>Der Timer zeigt dir Belastung und Pause. Danach siehst du deinen Verlauf im Bereich Fortschritt.</span></li>
+        </ol>
+      </div>
     </section>
 
     <section>
-      <h2>Was du nicht brauchst</h2>
-      <p>Du brauchst nur das Air-Bike und die App. Der Timer führt dich, du musst nichts auf einer Uhr ablesen.</p>
+      <div class="wrap">
+        <p class="eyebrow">Die App im Bild</p>
+        <h2>So sieht es aus</h2>
+        <div class="shots">
+          <figure><img class="phone" src="img/b1_einheit.png" alt="Einheit mit Ablauf und Start" width="390" height="844" loading="lazy"><figcaption>Einheit</figcaption></figure>
+          <figure><img class="phone" src="img/b2_fitnesstest.png" alt="Fitness-Test" width="390" height="844" loading="lazy"><figcaption>Fitness-Test</figcaption></figure>
+          <figure><img class="phone" src="img/b5_timer.png" alt="Timer" width="390" height="844" loading="lazy"><figcaption>Timer</figcaption></figure>
+          <figure><img class="phone" src="img/b6a_fortschritt.png" alt="Fortschritt" width="390" height="844" loading="lazy"><figcaption>Fortschritt</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap grid2">
+        <div class="card">
+          <h3>Wie der Plan aufgebaut ist</h3>
+          <p>Der Plan zählt zehn Wochen rückwärts vom Kampftermin. Er wechselt zwischen langen Intervallen für Herz und Kreislauf, mittleren Einheiten und kurzen Sprints. Zum Kampf hin werden die Einheiten kampfnäher.</p>
+        </div>
+        <div class="card">
+          <h3>Die Pausen gehören dazu</h3>
+          <p>Boxen läuft in Schüben mit kurzer Erholung. Der Plan trainiert das so. Wer sich in den Pausen erholt, hält die harten Abschnitte länger durch.</p>
+        </div>
+        <div class="card">
+          <h3>Erinnerungen</h3>
+          <p>Du kannst Erinnerungen einschalten. Dann kommt eine Mitteilung vor der nächsten Einheit, zu der Zeit, die du eingestellt hast. Wenn du längere Zeit nicht in der App warst, kommt eine kurze Erinnerung.</p>
+        </div>
+        <div class="card">
+          <h3>Du brauchst nichts außer dem Air-Bike</h3>
+          <p>Keine Zusatzgeräte. Der Timer führt dich, du musst nichts auf einer Uhr ablesen.</p>
+        </div>
+      </div>
     </section>
 
     <section>
-      <h2>Erinnerungen</h2>
-      <p>Du kannst Erinnerungen einschalten. Dann kommt eine Mitteilung vor der nächsten Einheit, zu der Zeit, die du eingestellt hast. Wenn du längere Zeit nicht in der App warst, kommt eine kurze Erinnerung. Mehr nicht.</p>
+      <div class="wrap">
+        <div class="row-btn" style="margin-top:0">
+          <a class="btn" href="https://aozcorap.github.io/airbike/">Web-Version öffnen</a>
+          <a class="btn ghost" href="fragen.html">Fragen und Antworten</a>
+        </div>
+      </div>
     </section>
-
-    <a class="btn" href="https://aozcorap.github.io/airbike/">Web-Version öffnen</a>
   </main>
 
-  <footer class="wrap">
-    <a href="datenschutz.html">Datenschutz</a>
-    <a href="impressum.html">Impressum</a>
-    <a href="mailto:support@nonstop-boxing.de">Kontakt</a>
+  <footer>
+    <div class="wrap foot">
+      <div>Nonstop Boxing · Ahmet Özcorapci · Friedberg<br>Kontakt: <a href="mailto:support@nonstop-boxing.de">support@nonstop-boxing.de</a></div>
+      <nav aria-label="Rechtliches">
+        <a href="fragen.html">Fragen</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="impressum.html">Impressum</a>
+      </nav>
+    </div>
   </footer>
 </body>
 </html>

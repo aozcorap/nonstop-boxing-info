@@ -10,52 +10,82 @@
 </head>
 <body>
   <header class="top">
-    <a class="brand" href="index.html"><img src="icon.svg" alt="" width="30" height="30"> Nonstop <b>Boxing</b></a>
-    <nav>
-      <a href="so-funktioniert-es.html">So funktioniert es</a>
-      <a href="fuer-vereine.html" aria-current="page">Für Vereine</a>
-      <a href="preise.html">Preise</a>
-      <a href="fragen.html">Fragen</a>
-    </nav>
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="icon.svg" alt="" width="30" height="30"> Nonstop <b>Boxing</b></a>
+      <nav aria-label="Hauptmenü">
+        <a href="so-funktioniert-es.html">So funktioniert es</a>
+        <a href="fuer-vereine.html" aria-current="page">Für Vereine</a>
+        <a href="preise.html">Preise</a>
+        <a href="fragen.html">Fragen</a>
+        <a class="btn" href="https://aozcorap.github.io/airbike/">Web-Version öffnen</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="wrap">
-    <h1>Nonstop Boxing für Vereine</h1>
-    <p class="lead">Als Trainer legst du deine Boxer an, gibst jedem einen Code und siehst, wer trainiert. Die Boxer trainieren in der Zeit ohne Werbung.</p>
+  <main>
+    <div class="wrap" style="padding-top:56px">
+      <p class="eyebrow">Für Trainer und Vereine</p>
+      <h1>Alle deine Boxer in einer Übersicht</h1>
+      <p class="lead muted" style="font-size:19px;max-width:660px">Du legst deine Boxer an, gibst jedem einen Code und siehst, wer trainiert und wer lange nicht da war. Die Boxer trainieren in der Testwoche ohne Werbung.</p>
+    </div>
 
     <section>
-      <h2>So läuft es</h2>
-      <ol class="steps">
-        <li><b>1. Verein anlegen</b><span class="muted">Bei der Registrierung wählst du ein Paket: 3, 5 oder 10 Boxer.</span></li>
-        <li><b>2. Boxer anlegen</b><span class="muted">Du legst jeden Boxer an und bekommst für ihn einen Code.</span></li>
-        <li><b>3. Codes weitergeben</b><span class="muted">Der Boxer gibt den Code in der App ein und ist im Verein.</span></li>
-        <li><b>4. Den Stand sehen</b><span class="muted">Du siehst, wer seine Einheiten macht und wer lange nicht trainiert hat.</span></li>
-      </ol>
+      <div class="wrap">
+        <p class="eyebrow">So läuft es</p>
+        <h2>In vier Schritten</h2>
+        <ol class="steps">
+          <li><b>Verein anlegen</b><span>Bei der Registrierung wählst du ein Paket: 3, 5 oder 10 Boxer.</span></li>
+          <li><b>Boxer anlegen</b><span>Du legst jeden Boxer an und bekommst für ihn einen Code.</span></li>
+          <li><b>Code weitergeben</b><span>Der Boxer gibt den Code in der App ein und ist in deinem Verein.</span></li>
+          <li><b>Den Stand sehen</b><span>Du siehst, wann jeder zuletzt trainiert hat und welche Einheit als Nächstes ansteht.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap">
+        <p class="eyebrow">Testwoche</p>
+        <h2>Eine Woche kostenlos testen</h2>
+        <p style="max-width:680px">Du kannst das Paket erst eine Woche lang kostenlos testen. In dieser Woche trainieren du und deine Boxer ohne Werbung. Danach kannst du das Paket kaufen.</p>
+        <p style="max-width:680px">Kaufst du nicht, trainieren du und deine Boxer wie Einzelnutzer, mit Werbung oder Abo. Die Codes bleiben gültig. Mit dem Kauf ist der Zugang sofort wieder da.</p>
+        <p class="muted small">Der Kauf im Web ist noch nicht freigeschaltet. Siehe <a href="preise.html">Preise</a>.</p>
+      </div>
     </section>
 
     <section>
-      <h2>Testwoche</h2>
-      <p>Du kannst das Paket erst eine Woche lang kostenlos testen. In dieser Woche trainieren du und deine Boxer ohne Werbung. Danach kannst du das Paket kaufen. Kaufst du nicht, trainieren du und deine Boxer wie Einzelnutzer, mit Werbung oder Abo. Die Codes bleiben gültig. Mit dem Kauf ist der Zugang sofort wieder da.</p>
-      <p class="muted small">Die Testwoche ist in der Web-Version eingerichtet. Der Kauf selbst ist noch nicht freigeschaltet, siehe <a href="preise.html">Preise</a>.</p>
+      <div class="wrap grid3">
+        <div class="card"><h3>3 Boxer</h3><p>Für kleine Gruppen.</p><p style="margin-top:12px;font-size:22px;font-weight:700;color:var(--text)">39,99 € / Jahr</p></div>
+        <div class="card price hi"><h3>5 Boxer</h3><p>Für Gruppen mit fünf Boxern.</p><p style="margin-top:12px;font-size:22px;font-weight:700;color:var(--text)">49,99 € / Jahr</p></div>
+        <div class="card"><h3>10 Boxer</h3><p>Für größere Gruppen.</p><p style="margin-top:12px;font-size:22px;font-weight:700;color:var(--text)">69,99 € / Jahr</p></div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap grid2">
+        <div class="card"><h3>Was der Trainer sieht</h3><p>Wann jeder Boxer zuletzt trainiert hat, welche Einheit als Nächstes ansteht und wer seit mehreren Tagen nicht da war. Du siehst die Zahlen deiner Boxer, nicht ihre privaten Daten.</p></div>
+        <div class="card"><h3>Was die App nicht ersetzt</h3><p>Technik und Sparring bleiben Sache des Trainers. Die App macht die Kondition planbar.</p></div>
+      </div>
     </section>
 
     <section>
-      <h2>Was der Trainer sieht</h2>
-      <p>Den Stand deiner Boxer: wann sie zuletzt trainiert haben, welche Einheit als Nächstes ansteht und ob jemand seit mehreren Tagen nicht da war. Du siehst die Zahlen deiner Boxer, nicht ihre privaten Daten.</p>
+      <div class="wrap">
+        <div class="row-btn" style="margin-top:0">
+          <a class="btn" href="preise.html">Zu den Preisen</a>
+          <a class="btn ghost" href="fragen.html">Fragen und Antworten</a>
+        </div>
+      </div>
     </section>
-
-    <section>
-      <h2>Ein Hinweis</h2>
-      <p>Die App ersetzt das Training mit dir nicht. Sie hilft dir, die Kondition planbar aufzubauen. Die Technik und das Sparring bleiben Sache des Trainers.</p>
-    </section>
-
-    <a class="btn" href="preise.html">Zu den Preisen</a>
   </main>
 
-  <footer class="wrap">
-    <a href="datenschutz.html">Datenschutz</a>
-    <a href="impressum.html">Impressum</a>
-    <a href="mailto:support@nonstop-boxing.de">Kontakt</a>
+  <footer>
+    <div class="wrap foot">
+      <div>Nonstop Boxing · Ahmet Özcorapci · Friedberg<br>Kontakt: <a href="mailto:support@nonstop-boxing.de">support@nonstop-boxing.de</a></div>
+      <nav aria-label="Rechtliches">
+        <a href="fragen.html">Fragen</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="impressum.html">Impressum</a>
+      </nav>
+    </div>
   </footer>
 </body>
 </html>

@@ -4,57 +4,102 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Preise – Nonstop Boxing</title>
-  <meta name="description" content="Preise von Nonstop Boxing: Einzelnutzung und Vereinspakete für 3, 5 oder 10 Boxer.">
+  <meta name="description" content="Preise von Nonstop Boxing: das erste Training kostenlos, Abo für Einzelnutzer und Vereinspakete für 3, 5 oder 10 Boxer.">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="stil.css">
 </head>
 <body>
   <header class="top">
-    <a class="brand" href="index.html"><img src="icon.svg" alt="" width="30" height="30"> Nonstop <b>Boxing</b></a>
-    <nav>
-      <a href="so-funktioniert-es.html">So funktioniert es</a>
-      <a href="fuer-vereine.html">Für Vereine</a>
-      <a href="preise.html" aria-current="page">Preise</a>
-      <a href="fragen.html">Fragen</a>
-    </nav>
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="icon.svg" alt="" width="30" height="30"> Nonstop <b>Boxing</b></a>
+      <nav aria-label="Hauptmenü">
+        <a href="so-funktioniert-es.html">So funktioniert es</a>
+        <a href="fuer-vereine.html">Für Vereine</a>
+        <a href="preise.html" aria-current="page">Preise</a>
+        <a href="fragen.html">Fragen</a>
+        <a class="btn" href="https://aozcorap.github.io/airbike/">Web-Version öffnen</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="wrap">
-    <h1>Preise</h1>
-    <p class="lead">Das erste Training ist kostenlos. Danach hast du die Wahl zwischen einem Abo und Training mit Werbung.</p>
+  <main>
+    <div class="wrap" style="padding-top:56px">
+      <p class="eyebrow">Preise</p>
+      <h1>Das erste Training ist kostenlos</h1>
+      <p class="lead muted" style="font-size:19px;max-width:640px">Danach hast du die Wahl: ein Abo oder das Training mit Werbung.</p>
+    </div>
 
     <section>
-      <h2>Einzelnutzung</h2>
-      <table>
-        <tr><th>Abo</th><th>Preis</th></tr>
-        <tr><td>Monat</td><td>1,99 €</td></tr>
-        <tr><td>Jahr</td><td>14,99 € (spart etwa 37 %)</td></tr>
-      </table>
-      <p>Oder du trainierst weiter mit Werbung, kostenlos.</p>
+      <div class="wrap grid2">
+        <div class="card price">
+          <h3>Einzelnutzung</h3>
+          <div class="amount">1,99 € <span class="per">pro Monat</span></div>
+          <p>Oder im Jahr: <b style="color:var(--text)">14,99 €</b>. Das Jahr spart rund 37 % gegenüber dem Monat.</p>
+          <p class="muted small">Oder du trainierst weiter mit Werbung, ohne Kosten.</p>
+        </div>
+        <div class="card price hi">
+          <h3>Vereine</h3>
+          <div class="amount">ab 39,99 € <span class="per">pro Jahr</span></div>
+          <p>Pakete für 3, 5 oder 10 Boxer. Nur als Jahresabo mit automatischer Verlängerung.</p>
+          <p class="muted small">Mit Testwoche. Siehe <a href="fuer-vereine.html">Für Vereine</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap">
+        <p class="eyebrow">Vereinspakete</p>
+        <h2>Alle Pakete im Überblick</h2>
+        <table>
+          <tr><th>Anzahl Boxer</th><th>Preis pro Jahr</th></tr>
+          <tr><td>3 Boxer</td><td>39,99 €</td></tr>
+          <tr><td>5 Boxer</td><td>49,99 €</td></tr>
+          <tr><td>10 Boxer</td><td>69,99 €</td></tr>
+        </table>
+      </div>
     </section>
 
     <section>
-      <h2>Vereine</h2>
-      <p>Pakete gibt es nur als Jahresabo mit automatischer Verlängerung.</p>
-      <table>
-        <tr><th>Paket</th><th>Jahr</th></tr>
-        <tr><td>3 Boxer</td><td>39,99 €</td></tr>
-        <tr><td>5 Boxer</td><td>49,99 €</td></tr>
-        <tr><td>10 Boxer</td><td>69,99 €</td></tr>
-      </table>
-      <p class="muted small">Die Testwoche für Vereine ist kostenlos. Siehe <a href="fuer-vereine.html">Für Vereine</a>.</p>
+      <div class="wrap">
+        <p class="eyebrow">Stand</p>
+        <h2>Was noch nicht geht</h2>
+        <div class="grid2">
+          <div class="card"><h3>Kauf im Web</h3><p>Der Kauf ist noch nicht freigeschaltet. Bezahlen geht erst in den Store-Apps.</p></div>
+          <div class="card"><h3>Preise können sich ändern</h3><p>Bis zur Freischaltung können sich einzelne Preise noch ändern. Maßgeblich ist der Preis, der beim Kauf angezeigt wird.</p></div>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>Stand der Preise</h2>
-      <p class="muted">Der Kauf im Web ist noch nicht freigeschaltet. Die Preise gelten für die App, die im App Store erscheint. Ein Preis kann sich bis zur Freischaltung noch ändern.</p>
+    <section class="band">
+      <div class="wrap">
+        <p class="eyebrow">Fragen zu Preisen</p>
+        <h2>Häufige Fragen</h2>
+        <details>
+          <summary>Muss ich nach dem ersten Training zahlen?</summary>
+          <p>Nein, du musst nicht. Du kannst das Training mit Werbung weiterführen. Ein Abo ist eine Wahl, keine Pflicht.</p>
+        </details>
+        <details>
+          <summary>Verlängert sich das Abo automatisch?</summary>
+          <p>Ja, das Abo verlängert sich automatisch, bis du kündigst. Die Kündigung läuft über den Store, in dem du gekauft hast.</p>
+        </details>
+        <details>
+          <summary>Was passiert, wenn mein Verein das Paket nicht verlängert?</summary>
+          <p>Dann trainieren der Trainer und die Boxer wieder wie Einzelnutzer, mit Werbung oder Abo. Die Codes bleiben gültig.</p>
+        </details>
+        <p style="margin-top:20px"><a href="fragen.html">Alle Fragen und Antworten</a></p>
+      </div>
     </section>
   </main>
 
-  <footer class="wrap">
-    <a href="datenschutz.html">Datenschutz</a>
-    <a href="impressum.html">Impressum</a>
-    <a href="mailto:support@nonstop-boxing.de">Kontakt</a>
+  <footer>
+    <div class="wrap foot">
+      <div>Nonstop Boxing · Ahmet Özcorapci · Friedberg<br>Kontakt: <a href="mailto:support@nonstop-boxing.de">support@nonstop-boxing.de</a></div>
+      <nav aria-label="Rechtliches">
+        <a href="fragen.html">Fragen</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="impressum.html">Impressum</a>
+      </nav>
+    </div>
   </footer>
 </body>
 </html>

@@ -10,67 +10,140 @@
 </head>
 <body>
   <header class="top">
-    <a class="brand" href="index.html"><img src="icon.svg" alt="" width="30" height="30"> Nonstop <b>Boxing</b></a>
-    <nav>
-      <a href="so-funktioniert-es.html">So funktioniert es</a>
-      <a href="fuer-vereine.html">Für Vereine</a>
-      <a href="preise.html">Preise</a>
-      <a href="fragen.html">Fragen</a>
-    </nav>
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="icon.svg" alt="" width="30" height="30"> Nonstop <b>Boxing</b></a>
+      <nav aria-label="Hauptmenü">
+        <a href="so-funktioniert-es.html">So funktioniert es</a>
+        <a href="fuer-vereine.html">Für Vereine</a>
+        <a href="preise.html">Preise</a>
+        <a href="fragen.html">Fragen</a>
+        <a class="btn" href="https://aozcorap.github.io/airbike/">Web-Version öffnen</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="wrap">
-    <h1>Boxen läuft in Schüben. Dein Training sollte das auch.</h1>
-    <p class="lead">Nonstop Boxing ist ein Trainingsplan für das Air-Bike. Er richtet sich nach deinem Kampftermin, misst deine Fitness am Anfang und führt dich mit einem Timer durch jede Einheit.</p>
-    <a class="btn" href="https://aozcorap.github.io/airbike/">Web-Version öffnen</a>
-    <p class="muted small">Läuft im Browser auf dem Handy und am Computer. Die iPhone-App folgt im App Store, Android folgt später.</p>
+  <main>
+    <div class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Trainingsplan für das Air-Bike</p>
+          <h1>Boxen läuft in Schüben. Dein Training sollte das auch.</h1>
+          <p class="lead">Nonstop Boxing plant deine Kondition vom Kampftermin rückwärts. Du fährst am Anfang einen Test, der Timer führt dich durch jede Einheit, und die App erinnert dich an die nächste.</p>
+          <div class="row-btn">
+            <a class="btn" href="https://aozcorap.github.io/airbike/">Web-Version öffnen</a>
+            <a class="btn ghost" href="so-funktioniert-es.html">So funktioniert es</a>
+          </div>
+          <div class="stores" aria-label="Store-Downloads, noch nicht verfügbar">
+            <span class="store"><small>Bald im</small><strong>App Store</strong></span>
+            <span class="store"><small>Bald bei</small><strong>Google Play</strong></span>
+          </div>
+          <p class="muted small" style="margin-top:12px">Die Web-Version läuft jetzt im Browser, auf dem Handy und am Computer. Die Store-Apps folgen.</p>
+        </div>
+        <div class="hero-shot">
+          <img class="phone" src="img/b3_plan.png" alt="Trainingsplan in der App, mit den Einheiten bis zum Kampftermin" width="390" height="844">
+        </div>
+      </div>
+    </div>
 
     <section>
-      <h2>Für wen das ist</h2>
-      <ul class="plain">
-        <li>Boxer, die vor einem Kampf ihre Kondition gezielt aufbauen wollen.</li>
-        <li>Trainer, die ihre Boxer planbar und messbar vorbereiten wollen.</li>
-        <li>Alle, die ein Air-Bike zu Hause oder im Gym haben.</li>
-      </ul>
-      <p class="muted">Der Plan setzt eine gute Grundfitness voraus. Bei Unsicherheit vorher mit deinem Trainer oder Arzt sprechen.</p>
+      <div class="wrap">
+        <p class="eyebrow">Was die App macht</p>
+        <h2>Vier Dinge, die sie für dich erledigt</h2>
+
+        <div class="feature">
+          <div class="fbody">
+            <h3>1. Der Plan richtet sich nach deinem Kampf</h3>
+            <p>Du trägst deinen Kampftermin ein. Der Plan zählt zehn Wochen rückwärts und wechselt zwischen langen Intervallen, mittleren Einheiten und kurzen Sprints. Zum Kampf hin werden die Einheiten kampfnäher.</p>
+          </div>
+          <img class="phone" src="img/b1_einheit.png" alt="Einheit mit Ablauf und Start" width="390" height="844" loading="lazy">
+        </div>
+
+        <div class="feature flip">
+          <div class="fbody">
+            <h3>2. Ein Test am Anfang, Zielwerte nach deinem Ergebnis</h3>
+            <p>Du fährst einen kurzen Fitness-Test auf dem Air-Bike. Die Zielwerte richten sich nach deinem Ergebnis, nicht nach festen Pauschalwerten. Das ist der Unterschied zu einem normalen Bike-Programm.</p>
+          </div>
+          <img class="phone" src="img/b2_fitnesstest.png" alt="Fitness-Test in der App" width="390" height="844" loading="lazy">
+        </div>
+
+        <div class="feature">
+          <div class="fbody">
+            <h3>3. Der Timer führt dich durch jede Einheit</h3>
+            <p>Der Timer zeigt dir Belastung und Pause an. Du musst nicht auf eine Uhr schauen, du kannst dich auf das Fahren konzentrieren.</p>
+          </div>
+          <img class="phone" src="img/b5_timer.png" alt="Timer während einer Einheit" width="390" height="844" loading="lazy">
+        </div>
+
+        <div class="feature flip">
+          <div class="fbody">
+            <h3>4. Dein Verlauf bleibt sichtbar</h3>
+            <p>Im Bereich Fortschritt siehst du, was du gefahren bist. Der Kalender zeigt dir, welche Einheiten anstehen.</p>
+          </div>
+          <img class="phone" src="img/b6a_fortschritt.png" alt="Fortschritt in der App" width="390" height="844" loading="lazy">
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>Was die App macht</h2>
-      <div class="cards">
-        <div class="card"><b>Plan nach Kampftermin</b><span class="muted">Der Plan zählt rückwärts vom Kampf. Er gibt dir zehn Wochen mit Einheiten, die sich steigern.</span></div>
-        <div class="card"><b>Fitness-Test</b><span class="muted">Du fährst am Anfang einen kurzen Test. Die Zielwerte richten sich nach deinem Ergebnis, nicht nach festen Pauschalwerten.</span></div>
-        <div class="card"><b>Timer</b><span class="muted">Der Timer führt dich durch Belastung und Pause. Du musst nicht auf die Uhr schauen.</span></div>
-        <div class="card"><b>Erinnerungen</b><span class="muted">Wenn du willst, erinnert dich die App an die nächste Einheit, als Mitteilung aufs Handy.</span></div>
+    <section class="band">
+      <div class="wrap grid2">
+        <a class="card" href="fuer-vereine.html">
+          <p class="eyebrow">Für Trainer und Vereine</p>
+          <h3>Deine Boxer, ein Überblick</h3>
+          <p>Lege deine Boxer an, gib jedem einen Code und sieh, wer trainiert. Mit Testwoche.</p>
+        </a>
+        <a class="card" href="preise.html">
+          <p class="eyebrow">Preise</p>
+          <h3>Das erste Training ist kostenlos</h3>
+          <p>Danach Abo oder Training mit Werbung. Vereinspakete ab 39,99 € im Jahr.</p>
+        </a>
       </div>
     </section>
 
     <section>
-      <h2>Was die App nicht macht</h2>
-      <p>Sie ersetzt kein Boxtraining, keine Technik und kein Sparring. Sie ergänzt das Boxtraining, damit du die Kondition planbar aufbaust. Eine wissenschaftliche Studie zur App gibt es nicht. Der Plan folgt anerkannten Trainingsprinzipien.</p>
+      <div class="wrap">
+        <p class="eyebrow">Ehrlich gesagt</p>
+        <h2>Was die App nicht ist</h2>
+        <div class="grid2">
+          <div class="card"><h3>Kein Ersatz für Boxtraining</h3><p>Technik und Sparring machst du weiter mit deinem Trainer. Die App baut die Kondition dafür auf.</p></div>
+          <div class="card"><h3>Keine Studie</h3><p>Der Plan folgt anerkannten Trainingsprinzipien. Eine eigene wissenschaftliche Untersuchung gibt es nicht.</p></div>
+        </div>
+      </div>
     </section>
 
     <section>
-      <h2>Wo du sie nutzt</h2>
-      <p>Heute: Im Browser, auf dem Handy und am Computer. Die iPhone-App mit denselben Plänen kommt in den App Store. Sie kann dann auch ohne Netz trainieren.</p>
-      <p class="muted small">Die Store-Abzeichen erscheinen hier, sobald die App dort verfügbar ist.</p>
-    </section>
-
-    <section>
-      <h2>Mehr erfahren</h2>
-      <div class="cards">
-        <a class="card link" href="so-funktioniert-es.html"><b>So funktioniert es</b><span class="muted">Die Schritte vom ersten Start bis zur Einheit.</span></a>
-        <a class="card link" href="fuer-vereine.html"><b>Für Vereine</b><span class="muted">Pakete für Trainer und ihre Boxer, mit Testwoche.</span></a>
-        <a class="card link" href="preise.html"><b>Preise</b><span class="muted">Was du für Einzelnutzung und Vereine zahlst.</span></a>
-        <a class="card link" href="fragen.html"><b>Fragen und Antworten</b><span class="muted">Die häufigsten Fragen, kurz beantwortet.</span></a>
+      <div class="wrap">
+        <p class="eyebrow">Häufige Fragen</p>
+        <h2>Die wichtigsten Antworten</h2>
+        <details>
+          <summary>Brauche ich ein Air-Bike?</summary>
+          <p>Ja. Der Plan ist für das Air-Bike gemacht.</p>
+        </details>
+        <details>
+          <summary>Kostet es etwas?</summary>
+          <p>Das erste Training ist kostenlos. Danach gibt es ein Abo oder das Training mit Werbung. Die Preise stehen auf der Seite <a href="preise.html">Preise</a>.</p>
+        </details>
+        <details>
+          <summary>Wo kann ich die App nutzen?</summary>
+          <p>Heute im Browser, auf dem Handy und am Computer, über die Web-Version. Die iPhone-App folgt im App Store, Android später.</p>
+        </details>
+        <details>
+          <summary>Ist der Plan für Anfänger geeignet?</summary>
+          <p>Der Plan setzt eine gute Grundfitness voraus. Bei Unsicherheit sprich vorher mit deinem Trainer oder Arzt.</p>
+        </details>
+        <p style="margin-top:20px"><a href="fragen.html">Alle Fragen und Antworten</a></p>
       </div>
     </section>
   </main>
 
-  <footer class="wrap">
-    <a href="datenschutz.html">Datenschutz</a>
-    <a href="impressum.html">Impressum</a>
-    <a href="mailto:support@nonstop-boxing.de">Kontakt</a>
+  <footer>
+    <div class="wrap foot">
+      <div>Nonstop Boxing · Ahmet Özcorapci · Friedberg<br>Kontakt: <a href="mailto:support@nonstop-boxing.de">support@nonstop-boxing.de</a></div>
+      <nav aria-label="Rechtliches">
+        <a href="fragen.html">Fragen</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="impressum.html">Impressum</a>
+      </nav>
+    </div>
   </footer>
 </body>
 </html>
