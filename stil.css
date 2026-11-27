@@ -1,24 +1,54 @@
-:root { --bg: #0b0c0e; --card: #1a1c20; --line: #23252a; --text: #f2f3f5; --muted: #9aa0a6; --accent: #e5324b; }
+:root { --bg: #0b0c0e; --card: #1a1c20; --line: #23252a; --text: #f2f3f5; --muted: #9aa0a6; --accent: #e5324b; --link: #ff7a8c; }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
 body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-.wrap { max-width: 760px; margin: 0 auto; padding: 20px 16px 40px; }
-.brand { display: flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; font-size: 15px; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 16px 40px; }
+main.wrap { padding-top: 8px; }
+a { color: var(--link); }
+p { margin: 0 0 12px; }
+h1 { font-size: 30px; line-height: 1.15; margin: 28px 0 12px; }
+h2 { font-size: 20px; margin: 0 0 10px; }
+.lead { font-size: 18px; }
+.muted { color: var(--muted); }
+.small { font-size: 14px; }
+.btn { display: inline-block; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; padding: 14px 22px; border-radius: 10px; margin: 12px 0 8px; }
+section { border-top: 1px solid var(--line); margin-top: 32px; padding-top: 24px; }
+
+/* Kopfzeile */
+.top { max-width: 760px; margin: 0 auto; padding: 16px 16px 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; font-size: 15px; color: var(--text); text-decoration: none; }
 .brand img { width: 30px; height: 30px; }
 .brand b { color: var(--accent); font-weight: 700; }
-h1 { font-size: 30px; line-height: 1.15; margin: 36px 0 12px; }
-h2 { font-size: 20px; margin: 0 0 8px; }
-p { margin: 0 0 12px; }
-.muted { color: var(--muted); }
-.btn { display: inline-block; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; padding: 14px 22px; border-radius: 10px; margin: 8px 0 6px; }
-.small { font-size: 14px; }
-.kicker { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
-section { border-top: 1px solid var(--line); margin-top: 32px; padding-top: 24px; }
+.top nav { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 14px; }
+.top nav a { color: var(--muted); text-decoration: none; }
+.top nav a[aria-current="page"] { color: var(--text); border-bottom: 2px solid var(--accent); }
+
+/* Listen und Karten */
+ul.plain { padding-left: 20px; margin: 0 0 12px; }
+ul.plain li { margin-bottom: 6px; }
+.cards { display: grid; gap: 12px; }
+.card { display: block; background: var(--card); border-radius: 12px; padding: 14px 16px; color: var(--text); text-decoration: none; }
+.card b { display: block; margin-bottom: 4px; }
+a.card.link:hover { outline: 1px solid var(--accent); }
 .steps { display: grid; gap: 12px; list-style: none; padding: 0; margin: 12px 0 0; }
 .steps li { background: var(--card); border-radius: 12px; padding: 14px 16px; }
 .steps b { display: block; margin-bottom: 2px; }
-@media (min-width: 640px) { .steps { grid-template-columns: repeat(3, 1fr); } h1 { font-size: 38px; } }
+
+/* Tabelle */
+table { width: 100%; border-collapse: collapse; margin: 8px 0 16px; }
+th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--line); }
+th { color: var(--muted); font-weight: 600; font-size: 14px; }
+
+/* Fragen */
+details { background: var(--card); border-radius: 12px; padding: 12px 16px; margin-bottom: 10px; }
+summary { font-weight: 600; cursor: pointer; }
+details p { margin: 10px 0 2px; }
+
 footer { border-top: 1px solid var(--line); margin-top: 40px; padding-top: 18px; text-align: center; font-size: 14px; color: var(--muted); }
-footer a, a { color: #ff7a8c; }
-footer a { margin: 0 8px; }
-.back { display: inline-block; margin-top: 24px; }
+footer a { margin: 0 8px; color: var(--muted); }
+
+@media (min-width: 640px) {
+  h1 { font-size: 38px; }
+  .cards { grid-template-columns: repeat(2, 1fr); }
+  .steps { grid-template-columns: repeat(2, 1fr); }
+}
