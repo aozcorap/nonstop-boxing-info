@@ -100,6 +100,8 @@ details p:last-child { margin-bottom: 0; }
 .shots figure { margin: 0; }
 .shots figcaption { color: var(--muted); font-size: 14px; margin-top: 8px; text-align: center; }
 .shots .phone { max-width: 170px; margin: 0 auto; }
+.shots.two { grid-template-columns: repeat(2, 1fr); max-width: 640px; }
+.shots.two .phone { max-width: 300px; }
 
 /* Hero ohne Bild, zentriert gedacht */
 .hero-text h1 { font-size: 38px; max-width: 900px; }
