@@ -101,6 +101,20 @@ details p:last-child { margin-bottom: 0; }
 .shots figcaption { color: var(--muted); font-size: 14px; margin-top: 8px; text-align: center; }
 .shots .phone { max-width: 170px; margin: 0 auto; }
 
+/* Hero ohne Bild, zentriert gedacht */
+.hero-text h1 { font-size: 38px; max-width: 900px; }
+.hero-text .lead { font-size: 19px; color: #d7dade; max-width: 680px; }
+.hero-text .row-btn .btn { min-height: 54px; padding: 14px 28px; font-size: 17px; }
+
+/* Rollen-Karten Boxer / Trainer */
+.roles { display: grid; gap: 20px; }
+.role { display: grid; grid-template-columns: 110px 1fr; gap: 20px; align-items: center; background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 22px; color: var(--text); text-decoration: none; }
+.role:hover { border-color: #3a3f47; }
+.role .phone { width: 110px; border-radius: 16px; }
+.role h3 { font-size: 22px; }
+.role p { color: #c6cace; margin: 0 0 12px; }
+.role .btn { min-height: 44px; padding: 10px 20px; font-size: 15px; }
+
 /* Hinweis-Kasten und Vergleich */
 .notice { background: #2a1519; border: 1px solid var(--accent); border-radius: 14px; padding: 18px 20px; }
 .notice b { color: #fff; }
@@ -122,6 +136,10 @@ footer { border-top: 1px solid var(--line); padding: 36px 0 48px; color: var(--m
 
 /* Tablet und Desktop */
 @media (min-width: 720px) {
+  .roles { grid-template-columns: repeat(2, 1fr); }
+  .role { grid-template-columns: 150px 1fr; }
+  .role .phone { width: 150px; }
+  .hero-text h1 { font-size: 56px; }
   h1 { font-size: 46px; }
   h2 { font-size: 30px; }
   .grid2 { grid-template-columns: repeat(2, 1fr); }
@@ -136,6 +154,7 @@ footer { border-top: 1px solid var(--line); padding: 36px 0 48px; color: var(--m
   .foot { grid-template-columns: 1fr auto; align-items: center; }
 }
 @media (min-width: 1024px) {
+  .hero-text h1 { font-size: 68px; }
   h1 { font-size: 56px; }
   section { padding: 72px 0; }
   .hero { padding: 80px 0 64px; }
